@@ -26,6 +26,7 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 
+sudo groupadd docker
 sudo usermod --append --groups docker "$USER"
 sudo systemctl enable docker
 
