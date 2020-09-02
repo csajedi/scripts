@@ -4,7 +4,7 @@ libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git zsh gcc
 
 chsh -s $(which zsh)
-
+curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 curl https://pyenv.run | bash
 
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
