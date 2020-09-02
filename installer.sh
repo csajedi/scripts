@@ -35,3 +35,9 @@ sudo wget --output-document=/usr/local/bin/docker-compose https://github.com/doc
 sudo chmod +x /usr/local/bin/docker-compose
 sudo wget --output-document=/etc/bash_completion.d/docker-compose "https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose"
 printf '\nDocker Compose installed successfully\n\n'
+
+#Caddy
+echo "deb [trusted=yes] https://apt.fury.io/caddy/ /" | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list
+sudo apt update
+
+sudo apt install caddy
