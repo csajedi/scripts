@@ -41,5 +41,5 @@ printf '\nDocker Compose installed successfully\n\n'
 echo "deb [trusted=yes] https://apt.fury.io/caddy/ /" | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list
 sudo apt update
 
-sudo apt install caddy
+sudo apt install caddy=2.1.1
 sudo setcap CAP_NET_BIND_SERVICE=+eip $(which caddy)
