@@ -42,3 +42,4 @@ echo "deb [trusted=yes] https://apt.fury.io/caddy/ /" | sudo tee -a /etc/apt/sou
 sudo apt update
 
 sudo apt install caddy
+sudo setcap CAP_NET_BIND_SERVICE=+eip $(which caddy)
