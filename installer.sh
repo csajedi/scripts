@@ -35,6 +35,10 @@ pyenv install 3.12
 pyenv global 3.12
 nvm install latest
 
+
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+
+
 sudo apt-get remove docker docker-engine docker.io containerd runc
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
