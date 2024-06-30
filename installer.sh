@@ -29,9 +29,9 @@ echo 'export NVM_DIR="$HOME/.nvm"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm' >>~/.zshrc
 . ~/.zshrc
-pyenv install 3.12.4
-pyenv global 3.12.4
-nvm install 20
+pyenv install 3.12
+pyenv global 3.12
+nvm install latest
 
 sudo apt-get remove docker docker-engine docker.io containerd runc
 curl -fsSL https://get.docker.com -o get-docker.sh
